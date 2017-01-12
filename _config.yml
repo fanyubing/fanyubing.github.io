@@ -1,14 +1,7 @@
 title: 范轶清的blog
 description: "金玉游龙"
 baseurl: /
-#permalink: /:year/:month/:day/:title.html
-#highlighter: rouge # 使用rouge作为语法高亮引擎
 markdown: kramdown  # 使用kramdown作为markdown的转换器
-kramdown:
-  input: GFM
-  hard_wrap: true
-gems:
-  - jemoji # 要站点支持Github表情，必须添加
 twitter_username: fanyiqing333
 github_username: jinyuyoulong
 
