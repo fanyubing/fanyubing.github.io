@@ -139,8 +139,7 @@ pre {
 .icon > svg {
   display: inline-block;
   width: 16px;
-  height: 16px;
-  vertical-align: middle; }
+  height: 16px; }
   .icon > svg path {
     fill: #828282; }
 
