@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>范轶清的blog</title>
-    <description>金玉游龙</description>
-    <link>//</link>
-    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Aug 2018 13:56:49 +0800</pubDate>
-    <lastBuildDate>Fri, 17 Aug 2018 13:56:49 +0800</lastBuildDate>
+    <title>中国生存手册</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 17 Aug 2018 18:35:43 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Aug 2018 18:35:43 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>信用卡刷卡原则推荐</title>
+        <description>&lt;p&gt;1、每执行25+2+1原则，最少一月执行一轮，真实消费最好。25次十元以上，2次大额，1次刷爆（额度一万以下刷爆，一万以上建议到五分之一），月刷卡额最少要超过卡额度三分之一。&lt;/p&gt;
+
+&lt;p&gt;2、只刷积分机（多刷0.78或以上的积分机）大超市，名牌商店企业，连锁店，大商场，记住积分是持卡人交给银行的保护费&lt;/p&gt;
+
+&lt;p&gt;3、刷超六个行业，不要常在同一台机子上刷太多次数。刷卡金额最好不要整数。&lt;/p&gt;
+
+&lt;p&gt;4、网络用卡，网络POS机，手机POS机每月不超过二次。&lt;/p&gt;
+
+&lt;p&gt;5、二个月做一笔中等金额分期，分6-9期，三个月一次最低还款，最低还款要在帐单日第二天还。提额客户和新卡前6个月不可分期，最低还款。&lt;/p&gt;
+
+&lt;p&gt;6、注意刷卡时间不要超出商户正常营业时间。&lt;/p&gt;
+
+&lt;p&gt;7、每周还款一次，前三周还小额，刷爆后要还款至额度的三分之二以内，帐单日前还清所有应还款，征信不显示负债，若不在帐单日前还清欠款，需要还款额度的百分之五十至百分之七赶不上，保持信用卡可用额度在30%-50%之间。&lt;/p&gt;
+
+&lt;p&gt;8、多参加银行活动。&lt;/p&gt;
+
+&lt;p&gt;9、多买银行产品。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Aug 2018 00:00:00 +0800</pubDate>
+        <link>/2018/08/17/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%88%B7%E5%8D%A1%E5%8E%9F%E5%88%99%E6%8E%A8%E8%8D%90.html</link>
+        <guid isPermaLink="true">/2018/08/17/%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%88%B7%E5%8D%A1%E5%8E%9F%E5%88%99%E6%8E%A8%E8%8D%90.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>公司股权设置规则</title>
@@ -18,8 +45,8 @@
 第四：2/3以上，完全控股权，可修改公司章程，公司任何事项均具有表决权。&lt;/p&gt;
 </description>
         <pubDate>Thu, 16 Aug 2018 21:53:05 +0800</pubDate>
-        <link>//2018/08/16/ownership-structure.html</link>
-        <guid isPermaLink="true">//2018/08/16/ownership-structure.html</guid>
+        <link>/2018/08/16/ownership-structure.html</link>
+        <guid isPermaLink="true">/2018/08/16/ownership-structure.html</guid>
         
         <category>股权</category>
         
@@ -32,11 +59,11 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;文章就是普通的文本文件，文件名假定为2012-08-25-hello-world.html。
+    &lt;p&gt;file命名格式：文章就是普通的文本文件，文件名假定为2012-08-25-hello-world.html。
 (注意，文件名必须为”年-月-日-文章标题.后缀名”的格式。如果网页代码采用html格式，后缀名为html；如果采用markdown格式，后缀名为md。）&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;在该文件中，填入以下内容：（注意，行首不能有空格）&lt;/p&gt;
+    &lt;p&gt;demo示例：在该文件中，填入以下内容：（注意，行首不能有空格）&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -51,7 +78,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;每篇文章的头部，必须有一个yaml文件头，用来设置一些元数据。
+    &lt;p&gt;元数据：每篇文章的头部，必须有一个yaml文件头，用来设置一些元数据。
 它用三根短划线”—“，标记开始和结束，里面每一行设置一种元数据。”layout:default”，表示该文章的模板使用_layouts目录下的default.html文件；”title: 你好，世界”，表示该文章的标题是”你好，世界”，
 如果不设置这个值，默认使用嵌入文件名的标题，即”hello world”。&lt;/p&gt;
 
@@ -74,14 +101,25 @@ pid: &quot;&quot;       # 新建一个pid的字符串变量
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	在yaml文件头后面，就是文章的正式内容，里面可以使用模板变量。	jekyll using standards 使用规范就是文件头中设置的&quot;你好，世界&quot;，	2016-09-03 23:47:05 +0800则是嵌入文件名的日期（也可以在文件头重新定义date变量），&quot;| date_to_string&quot;表示将page.date变量转化成人类可读的格式。
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	在yaml文件头后面，就是文章的正式内容，里面可以使用模板变量。	
+	jekyll using standards 使用规范就是文件头中设置的&quot;你好，世界&quot;，
+    2016-09-03 23:47:05 +0800则是嵌入文件名的日期（也可以在文件头重新定义date变量），&quot;| date_to_string&quot;表示将page.date变量转化成人类可读的格式。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;发布&lt;/p&gt;
+  &lt;li&gt;发布
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;前置条件：本地已经安装了jekyll程序。
+本地安装jekyll
+sudo gem install jekyll
+本地预览：jekyll serve
+gh-pages分支push jekyll源文件
 
-    &lt;p&gt;正常的git管理发布&lt;/p&gt;
+master分支push `jekyll build` 后_site文件夹中的文件
+
+GitHub pages服务器并不会自动帮你发布，也不会额外处理什么。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
+  &lt;li&gt;注意
+ config中baseurl根目录不要添加/，post.url解析出来的格式为 /2016/07/25/VPS.html&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;文章参考:&lt;/p&gt;
@@ -92,8 +130,8 @@ pid: &quot;&quot;       # 新建一个pid的字符串变量
 
 </description>
         <pubDate>Sat, 03 Sep 2016 23:47:05 +0800</pubDate>
-        <link>//jekyll%20github%20markdown%20rouge/2016/09/03/jekyll-use.html</link>
-        <guid isPermaLink="true">//jekyll%20github%20markdown%20rouge/2016/09/03/jekyll-use.html</guid>
+        <link>/jekyll-use.html</link>
+        <guid isPermaLink="true">/jekyll-use.html</guid>
         
         
         <category>jekyll github markdown rouge</category>
@@ -116,8 +154,8 @@ pid: &quot;&quot;       # 新建一个pid的字符串变量
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Aug 2016 00:00:00 +0800</pubDate>
-        <link>//2016/08/25/sublimeText.html</link>
-        <guid isPermaLink="true">//2016/08/25/sublimeText.html</guid>
+        <link>/2016/08/25/sublimeText.html</link>
+        <guid isPermaLink="true">/2016/08/25/sublimeText.html</guid>
         
         
       </item>
@@ -132,8 +170,8 @@ pid: &quot;&quot;       # 新建一个pid的字符串变量
 
 </description>
         <pubDate>Mon, 25 Jul 2016 00:00:00 +0800</pubDate>
-        <link>//2016/07/25/VPS.html</link>
-        <guid isPermaLink="true">//2016/07/25/VPS.html</guid>
+        <link>/2016/07/25/VPS.html</link>
+        <guid isPermaLink="true">/2016/07/25/VPS.html</guid>
         
         
       </item>
@@ -178,8 +216,8 @@ If you wish, you can add a leading and tailing pipe to each line of the table:
 ```&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
-        <link>//2016/07/22/markdown.html</link>
-        <guid isPermaLink="true">//2016/07/22/markdown.html</guid>
+        <link>/2016/07/22/markdown.html</link>
+        <guid isPermaLink="true">/2016/07/22/markdown.html</guid>
         
         
       </item>

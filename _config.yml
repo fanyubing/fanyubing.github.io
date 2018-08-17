@@ -1,6 +1,6 @@
-title: 范轶清的blog
-description: "金玉游龙"
-baseurl: /
+title: 中国生存手册
+description: ""
+baseurl: 
 markdown: kramdown  # 使用kramdown作为markdown的转换器
 twitter_username: fanyiqing333
 github_username: jinyuyoulong
