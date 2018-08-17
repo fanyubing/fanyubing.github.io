@@ -3,18 +3,18 @@
 　　<head>
 　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 　　　　<title>jekyll using standards 使用规范</title>
-	   <link rel="stylesheet" href="/jekyll_dome/css/default.css">
+	   <link rel="stylesheet" href="//css/default.css">
 	   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>jekyll using standards 使用规范</title>
-  <meta name="description" content="jekyll using standards 使用规范">
+  <meta name="description" content="本文摘要">
 
-  <link rel="stylesheet" href="/jekyll_dome/css/main.css">
-  <link rel="canonical" href="/jekyll_dome/2016/07/22/jekyll-use.html">
-  <link rel="alternate" type="application/rss+xml" title="范轶清的blog" href="/jekyll_dome/feed.xml">
+  <link rel="stylesheet" href="//css/main.css">
+  <link rel="canonical" href="//jekyll%20github%20markdown%20rouge/2016/09/03/jekyll-use.html">
+  <link rel="alternate" type="application/rss+xml" title="范轶清的blog" href="//feed.xml">
 </head>
 
 　　</head>
@@ -25,11 +25,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>jekyll using standards 使用规范</title>
-  <meta name="description" content="jekyll using standards 使用规范">
+  <meta name="description" content="本文摘要">
 
-  <link rel="stylesheet" href="/jekyll_dome/css/main.css">
-  <link rel="canonical" href="/jekyll_dome/2016/07/22/jekyll-use.html">
-  <link rel="alternate" type="application/rss+xml" title="范轶清的blog" href="/jekyll_dome/feed.xml">
+  <link rel="stylesheet" href="//css/main.css">
+  <link rel="canonical" href="//jekyll%20github%20markdown%20rouge/2016/09/03/jekyll-use.html">
+  <link rel="alternate" type="application/rss+xml" title="范轶清的blog" href="//feed.xml">
 </head>
 
 	 <div class="page-content">
@@ -46,30 +46,42 @@
   </li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    ---
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ---
 	layout: default
 	title: 你好，世界
 	---
 	&lt;h2&gt;jekyll using standards 使用规范&lt;/h2&gt;
 	&lt;p&gt;我的第一篇文章&lt;/p&gt;
-    &lt;p&gt;22 Jul 2016&lt;/p&gt;
+    &lt;p&gt;03 Sep 2016&lt;/p&gt;
 　　
-</code></pre>
-</div>
+</code></pre></div></div>
 <ol>
   <li>
     <p>每篇文章的头部，必须有一个yaml文件头，用来设置一些元数据。
 它用三根短划线”—“，标记开始和结束，里面每一行设置一种元数据。”layout:default”，表示该文章的模板使用_layouts目录下的default.html文件；”title: 你好，世界”，表示该文章的标题是”你好，世界”，
 如果不设置这个值，默认使用嵌入文件名的标题，即”hello world”。</p>
+
+    <p>每个页面都可以有自己的头信息，可以覆盖Jekyll和_config.yml里面的值</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: 一步一步创建Jekyll主题
+categories: [jekyll github markdown rouge]
+date: 2016-9-3 15:47:05
+excerpt: ""   # 覆盖清掉文章的摘要
+pid: ""       # 新建一个pid的字符串变量
+---
+</code></pre></div>    </div>
+
+    <p>​</p>
   </li>
   <li>
     <p>使用模板变量</p>
   </li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>	在yaml文件头后面，就是文章的正式内容，里面可以使用模板变量。	jekyll using standards 使用规范就是文件头中设置的"你好，世界"，	2016-07-22 00:00:00 +0800则是嵌入文件名的日期（也可以在文件头重新定义date变量），"| date_to_string"表示将page.date变量转化成人类可读的格式。
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	在yaml文件头后面，就是文章的正式内容，里面可以使用模板变量。	jekyll using standards 使用规范就是文件头中设置的"你好，世界"，	2016-09-03 23:47:05 +0800则是嵌入文件名的日期（也可以在文件头重新定义date变量），"| date_to_string"表示将page.date变量转化成人类可读的格式。
+</code></pre></div></div>
 <ol>
   <li>
     <p>发布</p>
@@ -78,7 +90,12 @@
   </li>
 </ol>
 
-<p>文章参考: <a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">阮一峰的网络日志</a></p>
+<p>文章参考:</p>
+
+<p><a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">阮一峰的网络日志</a></p>
+
+<p><a href="http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html">一步一步创建Jekyll主题</a></p>
+
 
 	 	</div>
 	 </div>
@@ -117,7 +134,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>made in jekyll</p>
+        <p>金玉游龙</p>
       </div>
     </div>
 

@@ -2,32 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>范轶清的blog</title>
-    <description>made in jekyll</description>
-    <link>/jekyll_dome/</link>
-    <atom:link href="/jekyll_dome/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Jan 2017 16:58:18 +0800</pubDate>
-    <lastBuildDate>Wed, 11 Jan 2017 16:58:18 +0800</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <description>金玉游龙</description>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 17 Aug 2018 13:56:49 +0800</pubDate>
+    <lastBuildDate>Fri, 17 Aug 2018 13:56:49 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>公司股权设置规则</title>
+        <description>&lt;p&gt;公司股权设置规则通用的是有四条线，
+第一：10%，公司累计持有10%股东，有权申请公司解散；
+第二：1/3以上，否决性控股，对公司重大事项具有一票否决权；
+第三：1/2以上，绝对控股权，除重大事项外具有表决权；
+第四：2/3以上，完全控股权，可修改公司章程，公司任何事项均具有表决权。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Aug 2018 21:53:05 +0800</pubDate>
+        <link>//2018/08/16/ownership-structure.html</link>
+        <guid isPermaLink="true">//2018/08/16/ownership-structure.html</guid>
+        
+        <category>股权</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>jekyll using standards 使用规范</title>
+        <description>&lt;h2 id=&quot;jekyll-using-standards-使用规范&quot;&gt;&lt;center&gt;jekyll using standards 使用规范&lt;center&gt;&lt;/center&gt;&lt;/center&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;文章就是普通的文本文件，文件名假定为2012-08-25-hello-world.html。
+(注意，文件名必须为”年-月-日-文章标题.后缀名”的格式。如果网页代码采用html格式，后缀名为html；如果采用markdown格式，后缀名为md。）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在该文件中，填入以下内容：（注意，行首不能有空格）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ---
+	layout: default
+	title: 你好，世界
+	---
+	&amp;lt;h2&amp;gt;jekyll using standards 使用规范&amp;lt;/h2&amp;gt;
+	&amp;lt;p&amp;gt;我的第一篇文章&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;03 Sep 2016&amp;lt;/p&amp;gt;
+　　
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;每篇文章的头部，必须有一个yaml文件头，用来设置一些元数据。
+它用三根短划线”—“，标记开始和结束，里面每一行设置一种元数据。”layout:default”，表示该文章的模板使用_layouts目录下的default.html文件；”title: 你好，世界”，表示该文章的标题是”你好，世界”，
+如果不设置这个值，默认使用嵌入文件名的标题，即”hello world”。&lt;/p&gt;
+
+    &lt;p&gt;每个页面都可以有自己的头信息，可以覆盖Jekyll和_config.yml里面的值&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: 一步一步创建Jekyll主题
+categories: [jekyll github markdown rouge]
+date: 2016-9-3 15:47:05
+excerpt: &quot;&quot;   # 覆盖清掉文章的摘要
+pid: &quot;&quot;       # 新建一个pid的字符串变量
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;​&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用模板变量&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	在yaml文件头后面，就是文章的正式内容，里面可以使用模板变量。	jekyll using standards 使用规范就是文件头中设置的&quot;你好，世界&quot;，	2016-09-03 23:47:05 +0800则是嵌入文件名的日期（也可以在文件头重新定义date变量），&quot;| date_to_string&quot;表示将page.date变量转化成人类可读的格式。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;发布&lt;/p&gt;
+
+    &lt;p&gt;正常的git管理发布&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;文章参考:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot;&gt;阮一峰的网络日志&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html&quot;&gt;一步一步创建Jekyll主题&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 03 Sep 2016 23:47:05 +0800</pubDate>
+        <link>//jekyll%20github%20markdown%20rouge/2016/09/03/jekyll-use.html</link>
+        <guid isPermaLink="true">//jekyll%20github%20markdown%20rouge/2016/09/03/jekyll-use.html</guid>
+        
+        
+        <category>jekyll github markdown rouge</category>
+        
+      </item>
     
       <item>
         <title>use sublime Text</title>
         <description>&lt;h3 id=&quot;如何设置折行&quot;&gt;如何设置折行&lt;/h3&gt;
 &lt;p&gt;‘将配置文件里 添加word_wrap:true 字段’&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;color_scheme&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Packages/Color Scheme - Default/Monokai.tmTheme&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;font_size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;word_wrap&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;ignored_packages&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-		&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Vintage&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+	&quot;color_scheme&quot;: &quot;Packages/Color Scheme - Default/Monokai.tmTheme&quot;,
+	&quot;font_size&quot;: 13,
+	&quot;word_wrap&quot;: true,
+	&quot;ignored_packages&quot;:
+	[
+		&quot;Vintage&quot;
+	]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 25 Aug 2016 00:00:00 +0800</pubDate>
-        <link>/jekyll_dome/2016/08/25/sublimeText.html</link>
-        <guid isPermaLink="true">/jekyll_dome/2016/08/25/sublimeText.html</guid>
+        <link>//2016/08/25/sublimeText.html</link>
+        <guid isPermaLink="true">//2016/08/25/sublimeText.html</guid>
         
         
       </item>
@@ -42,20 +132,8 @@
 
 </description>
         <pubDate>Mon, 25 Jul 2016 00:00:00 +0800</pubDate>
-        <link>/jekyll_dome/2016/07/25/VPS.html</link>
-        <guid isPermaLink="true">/jekyll_dome/2016/07/25/VPS.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>test md page</title>
-        <description>&lt;h3 id=&quot;test-page&quot;&gt;test page&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this is a test page writed by markdown.&lt;/code&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
-        <link>/jekyll_dome/2016/07/22/test.html</link>
-        <guid isPermaLink="true">/jekyll_dome/2016/07/22/test.html</guid>
+        <link>//2016/07/25/VPS.html</link>
+        <guid isPermaLink="true">//2016/07/25/VPS.html</guid>
         
         
       </item>
@@ -68,14 +146,13 @@
 
 &lt;p&gt;Inline code are surround by &lt;code class=&quot;highlighter-rouge&quot;&gt;backtick&lt;/code&gt; key. To create a block code:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Indent each line by at least 1 tab, or 4 spaces.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Indent each line by at least 1 tab, or 4 spaces.
 var Mou = exactlyTheAppIwant;  #### Fenced Code Blocks
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Start with a line containing 3 or more backticks, and ends with the first line with the same number of backticks:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Fenced code blocks are like Stardard Markdown’s regular code
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Fenced code blocks are like Stardard Markdown’s regular code
 blocks, except that they’re not indented and instead rely on
 a start and end fence lines to delimit the code block.
 
@@ -95,83 +172,14 @@ If you wish, you can add a leading and tailing pipe to each line of the table:
 | Content Cell | Content Cell  | Content Cell |
 | Content Cell | Content Cell  | Content Cell |
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;ps-markdown文件中可以嵌入html标签直接执行&quot;&gt;ps: markdown文件中可以嵌入html标签，直接执行&lt;br /&gt;&lt;/h3&gt;
 &lt;p&gt;所以，我们可以添加换行，设置样式，甚至使用css
 ```&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
-        <link>/jekyll_dome/2016/07/22/markdown.html</link>
-        <guid isPermaLink="true">/jekyll_dome/2016/07/22/markdown.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>hello jekyll</title>
-        <description>&lt;h2&gt;hello jekyll&lt;/h2&gt;
-&lt;p&gt;我的第一篇文章&lt;/p&gt;
-&lt;p&gt;22 Jul 2016&lt;/p&gt;
-</description>
-        <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
-        <link>/jekyll_dome/2016/07/22/jekyll.html</link>
-        <guid isPermaLink="true">/jekyll_dome/2016/07/22/jekyll.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>jekyll using standards 使用规范</title>
-        <description>&lt;h2 id=&quot;jekyll-using-standards-使用规范&quot;&gt;&lt;center&gt;jekyll using standards 使用规范&lt;center&gt;&lt;/center&gt;&lt;/center&gt;&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;文章就是普通的文本文件，文件名假定为2012-08-25-hello-world.html。
-(注意，文件名必须为”年-月-日-文章标题.后缀名”的格式。如果网页代码采用html格式，后缀名为html；如果采用markdown格式，后缀名为md。）&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在该文件中，填入以下内容：（注意，行首不能有空格）&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ---
-	layout: default
-	title: 你好，世界
-	---
-	&amp;lt;h2&amp;gt;jekyll using standards 使用规范&amp;lt;/h2&amp;gt;
-	&amp;lt;p&amp;gt;我的第一篇文章&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;22 Jul 2016&amp;lt;/p&amp;gt;
-　　
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;每篇文章的头部，必须有一个yaml文件头，用来设置一些元数据。
-它用三根短划线”—“，标记开始和结束，里面每一行设置一种元数据。”layout:default”，表示该文章的模板使用_layouts目录下的default.html文件；”title: 你好，世界”，表示该文章的标题是”你好，世界”，
-如果不设置这个值，默认使用嵌入文件名的标题，即”hello world”。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;使用模板变量&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	在yaml文件头后面，就是文章的正式内容，里面可以使用模板变量。	jekyll using standards 使用规范就是文件头中设置的&quot;你好，世界&quot;，	2016-07-22 00:00:00 +0800则是嵌入文件名的日期（也可以在文件头重新定义date变量），&quot;| date_to_string&quot;表示将page.date变量转化成人类可读的格式。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;发布&lt;/p&gt;
-
-    &lt;p&gt;正常的git管理发布&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;文章参考: &lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot;&gt;阮一峰的网络日志&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
-        <link>/jekyll_dome/2016/07/22/jekyll-use.html</link>
-        <guid isPermaLink="true">/jekyll_dome/2016/07/22/jekyll-use.html</guid>
+        <link>//2016/07/22/markdown.html</link>
+        <guid isPermaLink="true">//2016/07/22/markdown.html</guid>
         
         
       </item>
